@@ -39,7 +39,7 @@ input{
     font-family: monospace;
     color: red;
     text-shadow: 2px 2px 2px rgb(192, 190, 192);
-    position: absolute;
+    /* position: absolute; */
 }
 
 .las{
@@ -49,7 +49,7 @@ input{
     font-family: monospace;
     color: red;
     text-shadow: 2px 2px 2px rgb(196, 187, 196);
-    position: absolute;
+    /* position: absolute; */
 }
 
 .mail{
@@ -59,7 +59,7 @@ input{
     font-family: monospace;
     color: red;
     text-shadow: 2px 2px 2px rgb(196, 187, 196);
-    position: absolute;
+    /* position: absolute; */
 }
 
 .pswp{
@@ -69,7 +69,7 @@ input{
     font-family: monospace;
     color: red;
     text-shadow: 2px 2px 2px rgb(196, 187, 196);
-    position: absolute;
+    /* position: absolute; */
 }
 .confirmps{
     margin-left: 3rem;
@@ -78,7 +78,7 @@ input{
     font-family: monospace;
     color: red;
     text-shadow: 2px 2px 2px rgb(196, 187, 196);
-    position: absolute;
+    /* position: absolute; */
 }
 #deyempty{
     display: none;

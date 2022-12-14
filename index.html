@@ -17,12 +17,14 @@
         <span class="header">
             <h2>Join</h2>
         </span>
-        <form action="" id="form" method="post">
+        <form action="" id="form" method="post" onsubmit="submit()">
             <i class="fa-sharp fa-solid fa-mouse-field"></i>
 
             <!-- Firstname output series -->
             <section>
+              
                 <div class="gather">
+                    <input type="text" id="name" placeholder="Firstname"> <br> <br>
                     <span id="empty">
                         <p>Name dey empty guy!</p>
                     </span>
@@ -30,7 +32,6 @@
                         <p>Name must be greater than 5</p>
                     </span>
                 </div>
-                <input type="text" id="name" placeholder="Firstname"> <br> <br>
             </section>
 
             <!-- Firstname ends here -->
@@ -38,6 +39,7 @@
             <!-- lastname outcome -->
             <section>
                 <div class="las">
+                    <input type="text" id="lastly" placeholder="Lastname"> <br> <br>
                     <span id="lastname">
                         <p>Lastname dey empty guy!</p>
                     </span>
@@ -45,7 +47,7 @@
                         <p>Lastname must be greater than 5</p>
                     </span>
                 </div>
-                <input type="text" id="lastly" placeholder="Lastname"> <br> <br>
+               
             </section>
 
             <!-- Lastname outcome ends here -->
@@ -53,6 +55,7 @@
             <!-- Email outcome -->
             <section>
                 <div class="mail">
+                    <input type="text" id="email" placeholder="email"> <br><br>
                     <span id="emp">
                         <p>Email dey empty guy!</p>
                     </span>
@@ -60,7 +63,7 @@
                         <p>Email no dey correct my guy!</p>
                     </span>
                 </div>
-                <input type="text" id="email" placeholder="email"> <br><br>
+               
             </section>
             <!-- Email outcome ends here -->
 
@@ -68,6 +71,7 @@
             <!-- password validation -->
             <section>
                 <div class="pswp">
+                    <input type="password" id="psw" placeholder="Enter password"><br><br>
                     <span id="emptypass">
                         <p>Password dey empty my guy!</p>
                     </span>
@@ -75,13 +79,14 @@
                         <p>Password suppose dey higher than 5</p>
                     </span>
                 </div>
-                <input type="password" id="psw" placeholder="Enter password"><br><br>
+    
             </section>
             <!-- Password validation ends here-->
 
             <!-- Confirm password outcome -->
             <section>
                 <div class="confirmps">
+                    <input type="password" id="psw2" placeholder="Confirm password"> <br><br>
                     <span id="deyempty">
                         <p>Confirm dey empty my guy!</p>
                     </span>
@@ -89,7 +94,7 @@
                         <p>Password suppose match my guy!</p>
                     </span>
                 </div>
-                <input type="password" id="psw2" placeholder="Confirm password"> <br><br>
+                
             </section>
 
 
