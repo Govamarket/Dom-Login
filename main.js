@@ -24,7 +24,7 @@ const deyExceed = document.getElementById("passexceed");
 const emptyMsg = document.getElementById("deyempty");
 const deyhigherMsg = document.getElementById("deyhi");
 
-firstName.addEventListener("click", (event) => {
+ firstName.addEventListener("click", (event) => {
   setTimeout(() => {
     if (firstName.value == "") {
       empty.style.display = "flex";
@@ -106,13 +106,35 @@ passwordConfirmation.addEventListener("change", (event) => {
   }, 5000);
 });
 
-submitBtn.addEventListener("click", (event) => {
-  console.log(
-    firstName.value +
-      lastNameInput.value +
-      emailInput.value +
-      password.value +
-      passwordConfirmation
-  );
-  location.reload();
-});
+
+submitBtn.addEventListener("click", (event) =>{
+  if (firstName.value || lastNameInput.value || emailInput.value || password.value || passwordConfirmation.value == "") {
+    empty.style.display = "flex";
+    lastname.style.display = "flex";
+      deyempty.style.display = "flex";
+      deyNull.style.display = "flex";
+      emptyMsg.style.display = "flex";
+    
+    }else{
+      empty.style.display = "none";
+    lastname.style.display = "none";
+      deyempty.style.display = "none";
+      deyNull.style.display = "none";
+      emptyMsg.style.display = "none";
+    }
+    localStorage.setItem('firstName', JSON.stringify(firstName.value))
+    localStorage.setItem('lastName', JSON.stringify(lastNameInput.value))
+    localStorage.setItem('email', JSON.stringify(emailInput.value))
+    localStorage.setItem('password', JSON.stringify(password.value))
+    localStorage.setItem('confirm', JSON.stringify(passwordConfirmation.value))
+    firstName.value = "";
+    lastNameInput.value = "";
+    emailInput.value = "";
+    password.value = "";
+    passwordConfirmation.value = "";
+    // location.reload();
+})
+
+
+
+
