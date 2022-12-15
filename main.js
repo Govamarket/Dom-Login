@@ -37,7 +37,7 @@ const deyhigherMsg = document.getElementById("deyhi");
       than.style.display = "none";
       empty.style.display = "none";
     }
-  }, 5000);
+  }, 3000);
 });
 
 lastNameInput.addEventListener("change", (event) => {
@@ -52,7 +52,7 @@ lastNameInput.addEventListener("change", (event) => {
       lastname.style.display = "none";
       lasthan.style.display = "none";
     }
-  }, 5000);
+  }, 3000);
 });
 
 emailInput.addEventListener("change", (event) => {
@@ -70,7 +70,7 @@ emailInput.addEventListener("change", (event) => {
       deyempty.style.display = "none";
       return false;
     }
-  }, 5000);
+  }, 3000);
 });
 password.addEventListener("change", (event) => {
   setTimeout(() => {
@@ -87,7 +87,7 @@ password.addEventListener("change", (event) => {
       deyNull.style.display = "none";
       return;
     }
-  }, 5000);
+  }, 3000);
 });
 
 passwordConfirmation.addEventListener("change", (event) => {
@@ -103,7 +103,7 @@ passwordConfirmation.addEventListener("change", (event) => {
       deyhigherMsg.style.display = "none";
       emptyMsg.style.display = "none";
     }
-  }, 5000);
+  }, 3000);
 });
 
 
